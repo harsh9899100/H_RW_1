@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAME___</title>
+
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    background: #ffffff;
+    font-family: sans-serif;
+}
+</style>
+
+
+</head>
+<body>
+
+
+<!-- ------------------------------------ N A V I G A T I O N   B A R ------------------------------------------- -->
+
+<style>
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+    height: 100pxpx;
+    width: 100%;
+    margin-top: 0%;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    position: relative;
+  }
+  
+  @media (max-width: 820px) {
+    .navbar .menu {
+      display: block;
+      position: relative;
+    }
+  }
+  
+  .navbar .menu li {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  .navbar .menu a {
+    flex: 1;
+    justify-content: center;
+    display: inline-flex;
+    color: #000000;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .navbar .menu a > .fa {
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .navbar .menu li:hover {
+    color: #ff0000;
+  }
+  
+  .navbar .menu li:hover .container {
+    display: flex;
+  }
+  
+  @media (max-width: 820px) {
+    .navbar .menu li:hover .container 
+    {
+      display: none;
+    }
+    
+    .fa-angle-down 
+    {
+      display: none;
+    }
+  }
+  
+  a.hasDropdown:after {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-top-color: #8a8a8a;
+    z-index: 2;
+  }
+  
+  @media (max-width: 820px) {
+    li:hover a.hasDropdown:after 
+    {
+      display: none;
+    }
+  }
+  
+  li:hover a.hasDropdown:after 
+  {
+    content: '';
+    border-top-color: #000000;
+  }
+  
+  /* End Navigation Bar */
+  
+    /* -------------------------------- Start Single Section Menu -------------------------------- */
+  
+    .container 
+  {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    right: 200px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 20px rgb(255, 255, 255);
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .container__list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+  
+  .container__listItem {
+    flex: 0 0 25%;
+    padding: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .container__listItem > div {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .container__listItem  a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:inherit;
+  }
+ 
+  .container__listItem a:hover{color: red;}
+  
+  /* End Single Section Menu */
+  
+  /* Start Multiple Section Menu */
+  .container.has-multi .container__listItem {
+    flex-basis: 100%;
+  }
+  
+  .container.has-multi .container__list {
+    flex-basis: 33.333%;
+    border-radius: 4px;
+  }
+  
+  .container.has-multi .container__list:not(:last-child) {
+    border-right: solid 1px #f3f3f3;
+    margin-right: 20px;
+  }
+  
+  /* End Multiple Section Menu */
+
+  a:hover{
+    color: #ff0000;
+    text-decoration: none;
+  }
+</style>
+
+<nav class="navbar">
+    
+    <ul class="menu">
+        <li>
+            <img src="HOMEPAGE_REQUIRED_IMAGES/CALCUTTA_logo.png" alt="" srcset="" style="height: 60px; margin:10px 0px 0px 20px"> 
+        <li>        
+            <a href="#">Home</a>
+        </li>
+        
+        <li>
+            <a class="hasDropdown" href="#">Product & Brand <i class="fa fa-angle-down"></i></a>
+
+            <ul class="container">
+               
+                <div class="container__list">
+
+                    <div class="container__listItem">
+                        <h3> All Products </h3><hr>
+                    </div>
+
+                    <div class="container__listItem">
+                        <h3><span style="color:rgb(255, 255, 255)"> _ </span></h2> <hr>
+                    </div>
+
+                    <div class="container__listItem">
+                        <h3><span style="color:rgb(255, 255, 255)"> _ </span></h3> <hr>
+                    </div>
+
+                    <div class="container__listItem">
+                        <h3>All Industries</h3><hr>
+                    </div>                                  <!-- Heading Section Done Here -->
+
+                    <div class="container__listItem">
+                        <a href="#">Linear Motion Guideway</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">Ballscrew</a>
+                    </div>
+                    <div class="container__listItem"> 
+                        <a href="#">Single Axis Robot</a>
+                    </div>
+                    <div class="container__listItem">        <!--  Verticals  -->
+                        <a href="#">Automation</a>
+                    </div>
+
+                    <div class="container__listItem">
+                        <a href="#">All Types Of Bearings</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">Linear Motion Bearings and Shafts</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">Servo Motor</a>
+                    </div>
+                    <div class="container__listItem">        <!--  Verticals  -->
+                        <a href="#">Mechatronics</a>
+                    </div>
+
+
+                    <div class="container__listItem">
+                        <a href="#">Servo Drive</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">Linear Motor</a>
+                    </div>
+                    
+                    <div class="container__listItem">
+                        <a href="#">HMI (Human Machine Interface)</a>
+                    </div>
+                    <div class="container__listItem">        <!--  Verticals  -->
+                        <a href="#">Medical</a>
+                    </div>
+
+
+                    <div class="container__listItem">
+                        <a href="#">PLC (Programmable Logic Controller)</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">Expansion Units for PLC</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">VFD (Variable Frequency Drive)</a>
+                    </div>
+                    <div class="container__listItem">        <!--  Verticals  -->
+                        <a href="#">Pneumatics</a>
+                    </div>
+
+                    
+                    <div class="container__listItem">
+                        <a href="#">Precision Angular Contact Bearing</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="#">Ballscrew Support Bearings</a>
+                    </div>
+                    
+                    <div class="container__listItem">
+                        <a href="#">Stepper Motor and Drive</a>
+                    </div>
+                    <div class="container__listItem">        <!-- Verticals  -->
+                        <a href="#">Robotics</a>
+                    </div>
+
+
+                    <div class="container__listItem">
+                        <a href="#">Easy Stepper Motor and Drive</a>
+                    </div>                    
+                    <div class="container__listItem">
+                        <a href="#">Water and Air Cooled Spindle Motor</a>
+                    </div>
+                    <div class="container__listItem">
+                        <a href="../../../Products/All_Products.HTML" style="color:red">View All Products</a>
+                    </div>
+                    <div class="container__listItem">        <!--  Verticals  -->
+                        <a href="../../../Industries/Industries.HTML" style="color:red">View All Industries</a>
+                    </div>
+
+
+                    <div class="container__listItem">        <!-- Verticals  -->
+                        <a href="#"></a>
+                    </div>
+                    <div class="container__listItem">        <!--  Verticals  -->
+                        <a href="#"></a>
+                    </div>
+     
+                </div>
+            </ul>
+        </li>
+
+        <li>        
+            <a href="#">Contact Us</a>
+        </li>
+    <ul>
+</nav>
+
+<!-- ----------------------------------------  M A I N  ----------------------------------------------------- -->
+
+
+<section class="Business_introduction">
+
+<div>
+    <img src="HOMEPAGE_REQUIRED_IMAGES/BG1.jpeg" alt="" srcset="" style="width: 100%; height: 100%;">    
+</div>
+
+<div style="font-size:xx-large;padding: 0px 200px 20px 200px;text-align: center;">
+    <p style="margin-bottom: 0;">We’re making essential innovations the world needs today.</p>
+    <p style="color: red;font-weight: 500;font-size: x-large;">______</p>
+    <p style="font-weight: 400;font-size: small;">From Robotics to Medical Equipments, to deliver efficient and faster systems, we use science and innovation to make so many of the things that you use everyday possible. At Luna, we're working to make the world a Safer, Healthier and Better place to live.</p>
+   
+</div>
+
+<div style="position: relative;
+            width: 100%;">
+
+    <img src="HOMEPAGE_REQUIRED_IMAGES/BG3.jpg" alt="" srcset="" style="width: 100%; height: 100%;filter: opacity(-100%);">  
+
+    <div style="position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #fff;">
+                
+    
+        <p style="font-size: 200px;font-weight: bold;margin-top: 0;margin-bottom: 0;"> >30<span style="font-size: 100px;">Years</span> </p>
+
+        <p style="font-size: 40px;font-weight:300;"> Luna has been recognized as the industry's <span style="font-weight:400;font-size: 60px;">Problem Solver</span> </p>
+    </div>  
+</div>
+
+
+<div style="font-size:xx-large;padding: 0px 200px 20px 200px;text-align: center;">
+
+<hr>
+
+
+    <p style="margin-bottom: 0;">Our All Industries</p>
+    <p style="color: red;font-weight: 500;font-size: x-large;">______</p>
+
+    <!-- -------------------------------------------------------------- -->
+    <style>
+        .i_container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 10px 100px 10px 100px;
+        }
+
+        .i_card {
+          width: 100px;
+          margin-bottom: 20px;
+          padding: 10px;
+          border-radius: 2em;
+        }
+
+        .i_card a img{
+            height: 100px;
+            width: 100px;
+        }
+      
+    </style>
+
+
+    <div class="i_container">
+        <div class="i_card">
+            <a href=""><img src="" alt=""></a>
+        </div>
+        
+        <div class="i_card">
+            <a href=""><img src="" alt=""></a>
+        </div>
+
+        <div class="i_card">
+            <a href=""><img src="" alt=""></a>
+        </div>
+
+        <div class="i_card">
+            <a href=""><img src="" alt=""></a>
+        </div>
+    </div>
+    
+    <a href="Industries/Industries.HTML">
+        <input type="button" value="Click Here To Exolore all the Industries" style="background-color: #00c8ff58;border-radius: 2em;padding: 20px 50px 20px 50px;border-width: 0;font-size: large;font-weight: lighter;">
+    </a>
+    
+
+<hr>
+
+
+    <p style="margin-bottom: 0;">Our All Products</p>
+    <p style="color: red;font-weight: 500;font-size: x-large;">______</p>
+    
+    <a href="Products/All_Products.HTML">
+        <input type="button" value="Click Here To Exolore all the Products" style="background-color: #00c8ff58;border-radius: 2em;padding: 20px 50px 20px 50px;border-width: 0;font-size: large;font-weight: lighter;">
+    </a>
+    
+
+<hr>
+
+</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+  
+
+<!-- ----------------------------------------  F O O T E R  ----------------------------------------------------- -->
+
+<style>
+    .footer-section {
+      padding: 50px 150px 50px 150px;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 200px;
+      font-family: sans-serif;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .footer-card {
+      width:200px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  
+    .footer-card p a{
+      text-decoration: none;
+      color:rgb(80, 80, 80);
+      font-weight: 200;
+    }
+
+    .footer-card p a{
+      font-size: 14px;
+    }  
+    
+    .footer-card p a:hover{
+      text-decoration: none;
+      color:red;
+    }
+
+    .footer-container a img{
+        height: 30px; margin: 5px;
+    }
+
+    .footer-container a img:hover{
+        background-color: rgba(206, 206, 206, 0.906);
+        border-radius: 5px;
+    }
+  
+  
+  
+    
+  
+    @media only screen and (max-width: 1024px) {
+      
+    }
+  
+    @media only screen and (max-width: 767px) {
+      
+    }
+  
+    @media only screen and (max-width: 480px) {
+      .footer-card {
+        flex-direction: column;
+      }
+    }
+  
+  </style>
+  
+  <section class="footer-section">
+  
+    <div class="footer-container">
+     
+      <!------------------------------------------------------------------------->
+      <div class="footer-card">
+        <h3 style="font-weight: 400;">
+             Verticals
+        </h3>
+        
+        <p class="footer-downloads">
+          <a href="">Automation</a>           
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Bearings</a> 
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Mechatronics</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Pneumatics</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Medical</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Robotics</a>
+        </p>
+
+      </div>
+
+    
+      <div class="footer-card">
+        <h4 style="font-weight: 400;">
+            Our Company
+        </h4>
+        
+        <p class="footer-downloads">
+          <a href="">About</a>           
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Career</a> 
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Newsroom</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Global Locations</a>
+        </p>
+
+      </div>
+
+
+      <div class="footer-card">
+        <h4 style="font-weight: 400;">
+            Our Solutions
+        </h4>
+        
+        <p class="footer-downloads">
+          <a href="">Product Lines</a>           
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Industries</a> 
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Brands</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Solution Finder</a>
+        </p>
+
+      </div>
+
+      <div class="footer-card">
+        <h4 style="font-weight: 400;">
+            Our Solutions
+        </h4>
+        
+        <p class="footer-downloads">
+          <a href="">Contact</a>           
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Brand Distribution</a> 
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Brands</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Brands</a>
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Supplier Center</a>
+        </p>
+
+      </div>
+
+      <div class="footer-card">
+        <h4 style="font-weight: 400;">
+            Our Solutions
+        </h4>
+        
+        <p class="footer-downloads">
+          <a href="">Brand Distribution</a>           
+        </p>
+
+      </div>
+
+      <div class="footer-card">
+        <h4 style="font-weight: 400;">
+            Ethics & Compliance
+        </h4>
+        
+        <p class="footer-downloads">
+          <a href="">Ethics Hotline</a>           
+        </p>
+
+        <p class="footer-downloads">
+          <a href="">Code of Conduct</a>           
+        </p>
+
+      </div>
+
+    
+
+    </div>
+
+    <div class="footer-container" style="margin: 1px auto;">
+        <a href=""><img src="HOMEPAGE_REQUIRED_IMAGES/Fb_icon.png" alt="" srcset="" ></a>
+        <a href=""><img src="HOMEPAGE_REQUIRED_IMAGES/Ig_icon.png" alt="" srcset="" ></a> 
+        <a href=""><img src="HOMEPAGE_REQUIRED_IMAGES/Li_icon.png" alt="" srcset="" ></a>
+        <a href=""><img src="HOMEPAGE_REQUIRED_IMAGES/YT_icon.png" alt="" srcset="" ></a> 
+    </div>
+    
+    <p style="font-size:medium">
+      © 2019 Luna. Luna™, the Luna Logo, and all trademarks and service marks denoted with ™, ℠ or ® are owned by affiliates of Luna. unless otherwise noted.
+    </p>
+
+    <p style="margin-bottom: 30px;">
+       </p>
+
+</div>
+
+
+
+
+</section>
+
+
+	
+</body>
+</html>
